@@ -1,0 +1,10 @@
+{
+  "artboards": [
+    { "file": "Login.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "Login" },
+    { "file": "Main.dc.html", "x": 470, "y": 0, "w": 390, "h": 844, "title": "Mi lista" },
+    { "file": "PartnerList.dc.html", "x": 940, "y": 0, "w": 390, "h": 844, "title": "Lista de Ana" },
+    { "file": "DaughterList.dc.html", "x": 1410, "y": 0, "w": 390, "h": 844, "title": "Lista de Sofía" },
+    { "file": "WishForm.dc.html", "x": 1880, "y": 0, "w": 390, "h": 844, "title": "Nuevo deseo" }
+  ],
+  "launch": { "view": "canvas" }
+}

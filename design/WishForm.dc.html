@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+    :root{
+      --bg: oklch(97% 0.014 75);
+      --surface: oklch(99% 0.006 75);
+      --border: oklch(90% 0.014 75);
+      --text: oklch(27% 0.02 75);
+      --text-soft: oklch(52% 0.018 75);
+      --text-faint: oklch(65% 0.015 75);
+      --accent: oklch(68% 0.1 42);
+      --accent-soft: oklch(93% 0.035 42);
+      --accent-ink: oklch(38% 0.1 42);
+      --pri-low-bg: oklch(93% 0.035 155);
+      --pri-low-ink: oklch(40% 0.08 155);
+      --pri-med-bg: oklch(93% 0.04 80);
+      --pri-med-ink: oklch(42% 0.09 80);
+      --pri-high-bg: oklch(92% 0.05 30);
+      --pri-high-ink: oklch(42% 0.11 30);
+    }
+    body{margin:0; font-family:'Work Sans', sans-serif; color:var(--text);}
+    h1,h2,h3{font-family:'Quicksand', sans-serif; margin:0;}
+    input, textarea{font-family:'Work Sans', sans-serif;}
+  </style>
+</helmet>
+<div style="width:390px; height:844px; background:var(--bg); box-sizing:border-box; position:relative; overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="padding:24px 20px 12px; display:flex; align-items:center; gap:14px;">
+    <div style="width:36px; height:36px; border-radius:12px; background:var(--surface); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; color:var(--text);">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
+    </div>
+    <h1 style="font-size:19px; font-weight:700;">Nuevo deseo</h1>
+  </div>
+
+  <div style="flex:1; overflow:hidden; padding:8px 20px; display:flex; flex-direction:column; gap:16px;">
+
+    <div style="border:1.5px dashed var(--border); border-radius:18px; background:var(--surface); height:130px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--text-faint);">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2h6l2 2h3v11H4V8z"/><circle cx="12" cy="13" r="3.5"/></svg>
+      <span style="font-size:13px; font-weight:600; color:var(--text-soft);">Toca para subir una foto</span>
+      <span style="font-size:11.5px;">JPG o PNG, máx. 5MB</span>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:6px;">
+      <label style="font-size:13px; font-weight:600; color:var(--text-soft);">Título</label>
+      <div style="border:1px solid var(--border); background:var(--surface); border-radius:14px; padding:13px 14px; font-size:14px;">Zapatos deportivos</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:6px;">
+      <label style="font-size:13px; font-weight:600; color:var(--text-soft);">Descripción</label>
+      <div style="border:1px solid var(--border); background:var(--surface); border-radius:14px; padding:13px 14px; font-size:14px; color:var(--text-soft); height:56px;">Talla, dirección, notas...</div>
+    </div>
+
+    <div style="display:flex; gap:12px;">
+      <div style="flex:1; display:flex; flex-direction:column; gap:6px;">
+        <label style="font-size:13px; font-weight:600; color:var(--text-soft);">Precio estimado</label>
+        <div style="border:1px solid var(--border); background:var(--surface); border-radius:14px; padding:13px 14px; font-size:14px; display:flex; gap:4px;">
+          <span style="color:var(--text-faint);">$</span><span>220.000</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <label style="font-size:13px; font-weight:600; color:var(--text-soft);">Prioridad</label>
+      <div style="display:flex; gap:8px;">
+        <div style="flex:1; text-align:center; padding:10px; border-radius:12px; border:1px solid var(--border); background:var(--surface); font-size:13px; font-weight:600; color:var(--text-soft);">Baja</div>
+        <div style="flex:1; text-align:center; padding:10px; border-radius:12px; border:1.5px solid var(--pri-med-ink); background:var(--pri-med-bg); font-size:13px; font-weight:600; color:var(--pri-med-ink);">Media</div>
+        <div style="flex:1; text-align:center; padding:10px; border-radius:12px; border:1px solid var(--border); background:var(--surface); font-size:13px; font-weight:600; color:var(--text-soft);">Alta</div>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <label style="font-size:13px; font-weight:600; color:var(--text-soft);">Para quién</label>
+      <div style="display:flex; gap:8px;">
+        <div style="flex:1; text-align:center; padding:10px; border-radius:12px; border:1.5px solid var(--accent); background:var(--accent-soft); font-size:13px; font-weight:600; color:var(--accent-ink);">Para mí</div>
+        <div style="flex:1; text-align:center; padding:10px; border-radius:12px; border:1px solid var(--border); background:var(--surface); font-size:13px; font-weight:600; color:var(--text-soft);">Para Sofía</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="padding:14px 20px 22px; background:var(--bg);">
+    <button style="width:100%; border:none; background:var(--accent); color:white; font-family:'Work Sans', sans-serif; font-size:16px; font-weight:600; padding:16px; border-radius:16px; cursor:pointer;">Guardar deseo</button>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
